@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Charlie Rayne Pulsipher</title>
+    <style>
+        body {
+            background: black url('background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #000;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0px 3px 10px #000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFC107;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 20px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        nav a.active {
+            color: #FF5722;
+            font-weight: bold;
+        }
+
+        .content-container {
+            margin: 50px auto;
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+        }
+
+        .tabs {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .tabs a {
+            text-decoration: none;
+            color: #FFC107;
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #1f1f1f;
+            border: 2px solid #FFC107;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .tabs a:hover {
+            background: #FFC107;
+            color: black;
+        }
+
+        .tabs a.active {
+            background: #FF5722;
+            color: black;
+            font-weight: bold;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .profile-section img {
+            border-radius: 50%;
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            border: 3px solid #FFC107;
+        }
+
+        .profile-card {
+            background: #1f1f1f;
+            border-radius: 10px;
+            padding: 20px;
+            color: #FFC107;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+
+        .profile-card p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about" class="active">About Me</a>
+        <a href="#home">Home</a>
+        <a href="#contact">Contact Me</a>
+        <a href="#resume">Resume</a>
+    </nav>
+
+    <div class="content-container">
+        <div class="tabs">
+            <a href="/about-me/achievements.html" class="active">Achievements</a>
+            <a href="/about-me/hobbies.html">Hobbies</a>
+            <a href="/about-me/secondary.html">Secondary</a>
+        </div>
+
+        <div class="profile-section">
+            <img src="character-portrait.png" alt="Character Portrait">
+            <div class="profile-card">
+                <p>
+                    I am an experienced artist with a diverse background in various fields, including traditional art, digital art, and music. Art is my passion, and I’m eager to share that spark by teaching others, so they can experience the joy of creativity as well. I value my work above all else and strive to improve every day.
+                </p>
+                <p>
+                    As an artist with ADHD, my hyperfixations often drive my creativity forward. Over the years, I’ve developed many interests and explored various fandoms, which have influenced my character designs and original artworks. I’ve gained a range of skills and achievements that I’d love to share with everyone.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
