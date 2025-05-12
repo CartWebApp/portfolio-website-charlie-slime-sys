@@ -54,6 +54,15 @@ body {
     justify-content: center;
 }
 
+.black-background-contact {
+    display: flex;
+    background-color: var(--black);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 150vh;
+    justify-content: center;
+}
+
 /* NAV */
 nav {
     background-color: var(--darkbrown);
@@ -269,4 +278,36 @@ nav a.active {
     box-shadow: 0 8px 20px rgba(255, 193, 7, 0.8);
 }
 
-/* PROJECTS */
+/* CONTACT */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20vh; /* Space between the image and text box */
+    box-sizing: border-box;
+    
+}
+
+.contact-image {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact-text-box {
+    background-color: var(--darkbrown);
+    color: var(--yellow); 
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px rgba(255, 201, 54, 0.25);
+    line-height: 1.8;
+    max-width: 700px;
+    text-align: left;
+    border: 2px solid var(--lightbrown);
+}
+
+.contact-text-box p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
