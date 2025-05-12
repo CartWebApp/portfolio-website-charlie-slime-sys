@@ -42,9 +42,17 @@ body {
     background-color: var(--black);
     margin-left: 100px;
     margin-right: 100px;
-    height: auto;
+    height: 100vh;
 }
 
+.black-background-resume {
+    display: flex;
+    background-color: var(--black);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 150vh;
+    justify-content: center;
+}
 
 /* NAV */
 nav {
@@ -167,9 +175,72 @@ nav a.active {
 
 /* RESUME */
 
-.resume-image {
-    max-width: 100%;
-    max-height: 100%;
+.resume-center {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}
+
+.font-one-resume {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 700;
+}
+
+.left-column {
+    max-width: 300px;
+    text-align: center;
+    margin: 80px;
+}
+
+.left-column img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.left-column h2 {
+    color: var(--orange);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.left-column ul {
+    padding: 0;
+    margin: 0;
+    color: var(--lightyellow);
+    text-align: left;
+}
+
+.left-column ul li {
+    margin-bottom: 10px;
+}
+
+.resume-content {
+    max-width: 700px;
+    margin: 80px;
+}
+
+.resume-content h1 {
+    color: var(--activeorange);
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.resume-section h2 {
+    color: var(--orange);
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.resume-section ul {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    color: var(--lightyellow);
+}
+
+.resume-section ul li {
+    margin-bottom: 10px;
 }
 
 .print-button {
@@ -180,7 +251,7 @@ nav a.active {
     font-weight: bold;
     color: var(--yellow);
     background-color: var(--darkbrown);
-    border: 0px solid;
+    border: 2px solid var(--lightbrown);
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
