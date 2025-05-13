@@ -76,8 +76,9 @@ body {
     background-color: var(--black);
     margin-left: 100px;
     margin-right: 100px;
-    height: 100vh;
+    height: 150vh;
     justify-content: center;
+    flex-direction: column;
 }
 
 .black-background-port {
@@ -125,6 +126,11 @@ nav a.active {
 }
 
 /* NAV 2 / TABS */
+
+.shrink {
+    margin-left: 300px;
+    margin-right: 300px;
+}
 
 .tabs {
     display: flex;
@@ -493,6 +499,51 @@ nav a.active {
 /* BELOW ARE RESPECTIVE ABOUT ME PAGES 😁 */
 
 /* ABOUT ME - ACHIEVEMENTS */
+
+.achievement {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    margin-left: 5vh;
+    margin-right: 5vh;
+    background-color: var(--darkbrown);
+    border: 3px solid var(--lightbrown);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px 0px rgba(255, 201, 54, 0.25);
+    overflow: hidden;
+}
+
+.achievement.reverse {
+    flex-direction: row-reverse;
+}
+
+.achievement img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.achievement-content {
+    padding: 2rem;
+    color: var(--lightyellow);
+    line-height: 1.6;
+}
+
+.achievement-content h2 {
+    font-size: 2rem;
+    color: var(--orange);
+    margin-top: -2vh;
+    text-align: left;
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.achievement-content p {
+    margin: 0;
+    text-align: left;
+    font-size: 2vh;
+}
 
 /* ABOUT ME - HOBBIES */
 
