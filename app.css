@@ -451,15 +451,15 @@ nav a.active {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 1vh;
+    gap: 6vh;
     margin-top: 2rem;
 }
 
 .profile-image {
-    width: 400px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
     margin-left: 15vh;
-    border: 1px solid var(--darkbrown);
+    border: 2px solid var(--lightbrown);
     border-radius: 1%;
 }
 
@@ -467,15 +467,17 @@ nav a.active {
     flex-direction: column;
     background-color: var(--darkbrown);
     padding: 1.5rem 2rem;
+    border: 1px solid var(--lightbrown); 
     border-radius: 10px;
-    max-width: 600px;
+    max-width: 60vh;
+    height: 40vh;
     color: var(--lightyellow);
     box-shadow: 3px 3px 5px 0px rgba(255, 201, 54, 0.25);
     line-height: 1.6;
 }
 
 .about-profile-card p {
-    font-size: 16px;
+    font-size: 2vh;
     margin: 0;
     margin-bottom: 1rem;
 }
@@ -493,7 +495,7 @@ nav a.active {
 .port-container {
     flex-direction: column;
     align-items: center;
-    margin-top: 0vh;
+    margin-top: -5vh;
 }
 
 .portfolio-header {
