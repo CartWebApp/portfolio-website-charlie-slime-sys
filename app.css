@@ -50,7 +50,7 @@ body {
     background-color: var(--black);
     margin-left: 100px;
     margin-right: 100px;
-    height: 150vh;
+    height: 160vh;
     justify-content: center;
 }
 
@@ -60,6 +60,15 @@ body {
     margin-left: 100px;
     margin-right: 100px;
     height: 150vh;
+    justify-content: center;
+}
+
+.black-background-about {
+    display: flex;
+    background-color: var(--black);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100vh;
     justify-content: center;
 }
 
@@ -86,6 +95,8 @@ nav a {
 }
 
 nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     color: var(--orange);
 }
 
@@ -95,7 +106,39 @@ nav a.active {
     text-decoration: underline;
 }
 
-/* NAV 2 */
+/* NAV 2 / TABS */
+
+.tabs {
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    margin-bottom: 2rem;
+    background-color: var(--darkbrown);
+    gap: 10vh;
+    margin-top: -20vh;
+    padding: 3vh;
+    border: 3px solid var(--lightbrown);
+}
+
+.tabs a {
+    color: var(--lightyellow);
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 3.5vh;
+    font-weight: 300;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.tabs a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    margin: 0 1rem;
+    font-size: 3.5vh;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
 
 /* HOME */
 .container {
@@ -284,9 +327,10 @@ nav a.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20vh; /* Space between the image and text box */
+    gap: 20vh;
+    /* Space between the image and text box */
     box-sizing: border-box;
-    
+
 }
 
 .contact-image {
@@ -297,7 +341,7 @@ nav a.active {
 
 .contact-text-box {
     background-color: var(--darkbrown);
-    color: var(--yellow); 
+    color: var(--yellow);
     padding: 20px 30px;
     border-radius: 15px;
     box-shadow: 3px 3px 5px 0px rgba(255, 201, 54, 0.25);
@@ -311,3 +355,138 @@ nav a.active {
     font-size: 1.5em;
     font-weight: 500;
 }
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.contact-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vh;
+    height: 15vh;
+    background-color: var(--darkbrown);
+    border: 1px solid var(--lightbrown);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px rgba(255, 201, 54, 0.25);
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(255, 193, 7, 1);
+}
+
+.contact-icons a img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+/* ABOUT ME */
+
+.content-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0vh;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vh;
+    margin-top: 2rem;
+}
+
+.profile-image {
+    width: 400px;
+    height: 400px;
+    margin-left: 15vh;
+    border: 1px solid var(--darkbrown);
+    border-radius: 1%;
+}
+
+.profile-card {
+    flex-direction: column;
+    background-color: var(--darkbrown);
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    color: var(--lightyellow);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+/* BELOW ARE RESPECTIVE ABOUT ME PAGES 😁 */
+
+/* ABOUT ME - ACHIEVEMENTS */
+
+/* ABOUT ME - HOBBIES */
+
+/* ABOUT ME - SECONDARY */
+
+
+/* PORTFOLIO */
+.port-container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.portfolio-header {
+    font-size: 4vh;
+    font-weight: bold;
+    color: var(--yellow);
+    background-color: var(--lightbrown);
+    padding: 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.portfolio-text {
+    background-color: var(--lightbrown);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: var(--lightyellow);
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+}
+
+.portfolio-image {
+    width: 300px;
+    height: auto;
+    border: 5px solid var(--yellow);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* BELOW ARE RESPECTIVE PORTFOLIO PAGES 😁 */
+
+/* PORTFOLIO - ART */
+
+/* PORTFOLIO - WEB */
+
+/* PORTFOLIO - ENGLISH */
