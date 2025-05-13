@@ -71,6 +71,14 @@ body {
     height: 100vh;
     justify-content: center;
 }
+.black-background-about-two {
+    display: flex;
+    background-color: var(--black);
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 100vh;
+    justify-content: center;
+}
 
 .black-background-port {
     display: flex;
